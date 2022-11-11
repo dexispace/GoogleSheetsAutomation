@@ -1,0 +1,39 @@
+##Google Sheet's Javascript "Apps Script"
+
+function autoemail(e) {
+  let sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+
+  var excl = ['Data', 'CarpetReady'];
+
+  let range = e.range;
+  let row = e.range.getRow();
+  let col = e.range.getColumn();
+  let cellValue = sheet.getActiveCell().getValue();
+
+  let address = sheet.getRange(row,1).getValue();
+  let ordernumber = sheet.getRange(row,2).getValue();
+  let installdate = sheet.getRange(row,3).getValue();
+  let jobtype = sheet.getRange(row,4).getValue();
+  let fieldsuper = sheet.getRange(row,5).getValue();
+  let notes = sheet.getRange(row,11).getValue();
+  let holdstatus = sheet.getRange(row,12).getValue();
+  let user = Session.getActiveUser().getEmail();
+  let cellLocation = sheet.getActiveCell().getA1Notation();
+  let url = "[url]"
+
+    if(col == 11 & !~excl.indexOf(sheet.getSheetName())) {
+    MailApp.sendEmail(
+      '[youremail]',
+      address + ' has been updated🔥',
+      'This an automated notice that ' + fieldsuper + ' has updated ' + address + ' (' + ordernumber + ') with the notes ' + notes + ', the current status is ' + holdstatus + ' for the install date of ' + installdate + '. For more information, please check the carpet sheet directly at ' + url
+    );
+  };
+
+    if(col == 11 & !~excl.indexOf(activeSheet.getSheetName())) {
+    MailApp.sendEmail(
+      '[youremail]',
+      address + ' has been updated🔥',
+      'This an automated notice that ' + fieldsuper + ' has updated ' + address + ' (' + ordernumber + ') with the notes ' + notes + ', the current status is ' + holdstatus + ' for the install date of ' + installdate + '. For more information, please check the carpet sheet directly at ' + url
+    );
+  };
+}

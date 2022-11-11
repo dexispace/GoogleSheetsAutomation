@@ -1,0 +1,70 @@
+##Google Sheet's Javascript "Apps Script"
+
+function deleteRows() {
+  var ss=SpreadsheetApp.openById("13EeqyEdYNqPG_Db9_PutlH8e6SmSmqGgAg0Blt4r5ZU");
+  var sh=ss.getSheetByName("Data");
+  var sh1=ss.getSheetByName("[employee/tabname");
+  var sh2=ss.getSheetByName("[employee/tabname");
+  var sh3=ss.getSheetByName("[employee/tabname");
+  var sh4=ss.getSheetByName("[employee/tabname");
+  var sh5=ss.getSheetByName("[employee/tabname");
+  var sh6=ss.getSheetByName("[employee/tabname");
+  var sh7=ss.getSheetByName("[employee/tabname");
+  var sh8=ss.getSheetByName("[employee/tabname");
+  var sh9=ss.getSheetByName("[employee/tabname");
+  var sh10=ss.getSheetByName("[employee/tabname");
+  var sh11=ss.getSheetByName("[employee/tabname");
+  var sh12=ss.getSheetByName("[employee/tabname");
+  var sh13=ss.getSheetByName("[employee/tabname");
+  var sh14=ss.getSheetByName("[employee/tabname");
+  var sh15=ss.getSheetByName("[employee/tabname");
+  var sh16=ss.getSheetByName("[employee/tabname");
+  var sh17=ss.getSheetByName("[employee/tabname");
+  var sh18=ss.getSheetByName("[employee/tabname");
+  var sh19=ss.getSheetByName("[employee/tabname");
+  var sh20=ss.getSheetByName("[employee/tabname");
+  var sh21=ss.getSheetByName("[employee/tabname");
+  sh.getRange('A3:W4000').clearContent();
+  sh1.deleteRows(2,101)  
+  sh1.insertRowsAfter(2, 101);    
+  sh2.deleteRows(2,101)  
+  sh2.insertRowsAfter(2, 101);  
+  sh3.deleteRows(2,101)  
+  sh3.insertRowsAfter(2, 101);  
+  sh4.deleteRows(2,101)  
+  sh4.insertRowsAfter(2, 101);  
+  sh5.deleteRows(2,101)  
+  sh5.insertRowsAfter(2, 101);  
+  sh6.deleteRows(2,101)  
+  sh6.insertRowsAfter(2, 101);  
+  sh7.deleteRows(2,101)  
+  sh7.insertRowsAfter(2, 101);  
+  sh8.deleteRows(2,101)  
+  sh8.insertRowsAfter(2, 101);  
+  sh9.deleteRows(2,101)  
+  sh9.insertRowsAfter(2, 101);  
+  sh10.deleteRows(2,101)  
+  sh10.insertRowsAfter(2, 101);  
+  sh11.deleteRows(2,101)  
+  sh11.insertRowsAfter(2, 101);  
+  sh12.deleteRows(2,101)  
+  sh12.insertRowsAfter(2, 101);  
+  sh13.deleteRows(2,101)  
+  sh13.insertRowsAfter(2, 101);  
+  sh14.deleteRows(2,101)  
+  sh14.insertRowsAfter(2, 101);  
+  sh15.deleteRows(2,101)  
+  sh15.insertRowsAfter(2, 101);  
+  sh16.deleteRows(2,101)  
+  sh16.insertRowsAfter(2, 101);  
+  sh17.deleteRows(2,101)  
+  sh17.insertRowsAfter(2, 101);  
+  sh18.deleteRows(2,101)  
+  sh18.insertRowsAfter(2, 101);  
+  sh19.deleteRows(2,101)  
+  sh19.insertRowsAfter(2, 101);  
+  sh20.deleteRows(2,101)  
+  sh20.insertRowsAfter(2, 101);
+  sh21.deleteRows(2,101)  
+  sh21.insertRowsAfter(2, 101);                   
+}

@@ -1,0 +1,8 @@
+##Google Sheet's Javascript "Apps Script"
+
+function sortRange() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName('Data');
+  var range = sheet.getRange("A3:Y");
+  range.sort([{column: 11, ascending: true},{column: 23, ascending: true}]);
+ }

@@ -1,0 +1,32 @@
+##Google Sheet's Javascript "Apps Script"
+
+function onEdit(e) {
+
+    var row = e.range.getRow();
+    var col = e.range.getColumn();
+    
+    if(col == 32 && row > 1){
+      e.source.getActiveSheet().getRange(row,41).setValue(new Date());
+    }
+    if(col == 32 && row > 1){
+      e.source.getActiveSheet().getRange(row,41).setValue(new Date());
+    }
+    if(col == 34 && row > 1){
+      e.source.getActiveSheet().getRange(row,41).setValue(new Date());
+    }
+    if(col == 35 && row > 1){
+      e.source.getActiveSheet().getRange(row,41).setValue(new Date());
+    }
+    if(col == 36 && row > 1){
+      e.source.getActiveSheet().getRange(row,41).setValue(new Date());
+    }
+    if(col == 37 && row > 1){
+      e.source.getActiveSheet().getRange(row,41).setValue(new Date());
+    }
+    if(col == 38 && row > 1){
+      e.source.getActiveSheet().getRange(row,41).setValue(new Date());
+    }
+    if(col == 39 && row > 1){
+      e.source.getActiveSheet().getRange(row,41).setValue(new Date());
+    }
+}

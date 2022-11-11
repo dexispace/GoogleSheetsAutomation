@@ -1,0 +1,14 @@
+##Google Sheet's Javascript "Apps Script"
+
+function makeCopy() {
+
+var formattedDate = Utilities.formatDate(new Date(), "CST", "yyyy-MM-dd' 'HH:mm:ss");
+
+var name = SpreadsheetApp.getActiveSpreadsheet().getName() + " Copy " + formattedDate;
+
+var destination = DriveApp.getFolderById("1NGt33s6N9-G2TW88UXViX_8WwNvUEE2a");
+
+var file = DriveApp.getFileById(SpreadsheetApp.getActiveSpreadsheet().getId())
+
+file.makeCopy(name, destination);
+}
